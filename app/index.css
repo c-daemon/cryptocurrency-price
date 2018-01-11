@@ -1,0 +1,86 @@
+body {
+  background: rgb(150, 211, 247);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.top span{
+    border-bottom: black 10px solid;
+}
+
+.coinlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coin {
+  margin: 20px;
+  padding: 20px;
+}
+
+.coin-name {
+  margin: 10px;
+  text-align: center;
+}
+
+.currency {
+  margin-bottom: 7px;
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+}
+
+
+
+/* Loader */
+.loading_spinner-wrap {
+  width: 100%;
+  padding: 150px 0;
+}
+
+.loading_spinner {
+  display: block;
+  margin: 0 auto;
+  fill: #000;
+}
+.loading_spinner circle {
+  animation-name: upAndDown;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.05, 0.2, 0.35, 1);
+  animation-iteration-count: infinite;
+}
+.loading_spinner circle:nth-child(2) {
+  animation-delay: .18s;
+}
+.loading_spinner circle:nth-child(3) {
+  animation-delay: .36s;
+}
+
+@keyframes upAndDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
