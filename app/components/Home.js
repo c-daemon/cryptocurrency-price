@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'react-router-dom';
-import Bitcoin from './Bitcoin'
+import Template from './Template'
 import getAllcoins from './api';
 import Loader from './Loader';
 
@@ -35,7 +35,7 @@ class Home extends React.Component {
     return (
       <div className='home-container'>
         <h1 className='top'><span>Cyptocurrency Prices</span></h1>
-        {this.state.coins?<Bitcoin data={result}/>:<Loader/>}
+        {this.state.coins?<Template data={result}/>:<Loader/>}
       </div>
     )
   }

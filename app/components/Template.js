@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bitcoin = (props) => {
+const Template = (props) => {
 const coinName = ["Bitcoin", "Ethereum", "Ripple", "Bitcoin Cash", "Litecoin", 	"Miota", "Dash", "Nem"]
     return (
       <ul className='coinlist'>
@@ -20,4 +20,4 @@ const coinName = ["Bitcoin", "Ethereum", "Ripple", "Bitcoin Cash", "Litecoin", 	
     )
   }
 
-export default Bitcoin;
+export default Template;
